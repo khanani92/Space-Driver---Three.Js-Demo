@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Space Driver-Three.Js Demo</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/Three.js"></script>
+    <script src="js/RequestAnimationFrame.js"></script>
+    <script src="js/Detector.js"></script>
+    <script src="js/THREEx.KeyboardState.js"></script>
+    <script src="js/THREEx.WindowResize.js"></script>
+    <script src="js/Stats.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/DAT.GUI.min.js"></script>
+    <script src="js/TrackballControls.js"></script>
+       <style type="text/css">
+           #mainpg{
+                background-image:url("images/bg_4.jpg");
+                background-size:100% 100%;
+                background-repeat:no-repeat;
+           }
+           #mainpg .logo{
+               width: 300px;
+               height: 150px;
+               padding: 19px 29px 29px;
+               margin: 0 auto 20px;
+           }
+           #mainpg .menu{
+                width: 170px;
+                height: 250px;
+                border: solid 3px darkturquoise;
+                padding: 19px 29px 29px;
+                margin: -60px auto 0;
+                border-radius: 15px;
+                background-image: url("images/bg_3.jpg");
+                opacity:0.4;
+                filter:alpha(opacity=40); /* For IE8 and earlier */
+
+            }
+           #mainpg .btn{
+               width: 130px;
+               height: 15px;
+               border: solid 1px black;
+              padding-top: 10px;
+               opacity:1;
+               filter:alpha(opacity=100); /* For IE8 and earlier */
+               color: yellow;
+               font-size: 16px;
+               border-radius: 5px;
+
+           }
+           #mainpg .end{
+               color: aqua;
+               font-size: 34px;
+               padding: 6% 42%  29px;
+               margin: 0 auto 20px;
+               display: none;
+           }
+       </style>
+</head>
+<body>
+
+<div id="game_box"></div>
+<div id="mainpg"  style="width: 99%;height: 99%;position: absolute;">
+
+    <div class="logo" ><img src="images/game_logo1.png"></div>
+    <div class="menu">
+        <ul>
+            <li>  <div class="btn" id="btn1" >Start Game</div></li>
+            <li> <div class="btn"  id="btn2">About Us</div> </li>
+            <!--<li><div class="btn" id="btn3" >Exit</div></li>-->
+        </ul>
+    </div>
+    <h1 class="end">Game Over!!</h1>
+</div>
+
+<div id="aboutUs">
+
+</div>
+
+</body>
+<script src="js/game.js"></script>
+</html>
